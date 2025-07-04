@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  <title>Job Widget Test</title>
 </head>
-
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+  <h1>Job Widget Test (English)</h1>
+  <div id="job-widget-container"></div>
+  <script type="text/javascript" src="https://hr8.career.gllue.net/sdk/job-widget.min.js"></script>
+  <script type="text/javascript">
+    var widget = JobWidget.init({
+      "code": "hr8",
+      "locale": "en",
+      "recordType": "Experienced Hire",
+      "elementId": "job-widget-container",
+      "gql": "",
+      "pageSize": 10,
+      "env": "test"
+    });
+  </script>
 </body>
-
-</html>
+</html> 
