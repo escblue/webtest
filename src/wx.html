@@ -4564,8 +4564,6 @@ Copyright (c) 2014 Daniel Eden
     }
 </style>
 <link rel=canonical href=https://www.nkcswx.cn/en/about-us/careers>
-<meta http-equiv=content-security-policy
-    content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;">
 <style>
     img[src="data:,"],
     source[src="data:,"] {
@@ -4895,23 +4893,20 @@ Copyright (c) 2014 Daniel Eden
                         </div>
                         <div class=line></div>
                         <h3>Vacancies</h3>
-                        <div class="quote wow zoomInSmall animated" style=visibility:visible;animation-name:zoomInSmall>
-                            <div class=txt>
-                                <div id=recruitee-careers>
-                                    <script type="text/javascript" src="https://dipont.career.gllue.net/sdk/job-widget.min.js"></script>
-                                    <script type="text/javascript">
-                                    var widget = JobWidget.init({
-                                        "code": "dipont",
-                                        "locale": "en",
-                                        "recordType": "Experienced Hire",
-                                        "elementId": "job-widget-container",
-                                        "gql": "joborder__client__id__eq=88103",
-                                        "pageSize": 10,
-                                        "env": "production"
-                                    });
-                                    </script>                    
-                                </div>
-                            </div>
+                        <div class="quote wow zoomInSmall animated" style=visibility:visible;animation-name:zoomInSmall> 
+                            <div id="job-widget-container"></div>
+                            <script type="text/javascript" src="https://dipont.career.gllue.net/sdk/job-widget.min.js"></script>
+                            <script type="text/javascript">
+                            var widget = JobWidget.init({
+                                "code": "dipont",
+                                "locale": "en",
+                                "recordType": "Experienced Hire",
+                                "elementId": "job-widget-container",
+                                "gql": "joborder__client__id__eq=88103",
+                                "pageSize": 10,
+                                "env": "production"
+                            });
+                            </script>                     
                         </div>
                         <div class="captionfixd join">
                             <div class="caption_m caption_ms"><a href=javascript:void(0) class=clo>×</a>
